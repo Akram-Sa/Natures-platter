@@ -3,7 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nature's Platter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+      <nav class="flex justify-between items-center px-[141px] p-6">
+        <div>
+          <img src="./assets/logo-header.png" alt="" />
+        </div>
+        <div class="space-x-6 hidden md:flex">
+          <a href="#" class="text-gray-700 hover:text-green-600">Product</a>
+          <a href="#" class="text-gray-700 hover:text-green-600">Services</a>
+          <a href="#" class="text-gray-700 hover:text-green-600">Contact us</a>
+        </div>
+        <div class="space-x-4 hidden md:flex">
+          <button
+            class="px-4 py-2 border rounded-lg text-gray-700 hover:bg-gray-200"
+          >
+            Login
+          </button>
+          <button
+            class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
+          >
+            Register
+          </button>
+        </div>
+      </nav>
+
+      <!-- banner Section -->
+      <section class="text-center px-6 md:px-20 py-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+          Freshness <span class="text-green-600">You Can Count</span> On, Prices
+          You’ll Love!
+        </h1>
+        <p class="mt-4 text-gray-600 max-w-xl mx-auto">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+        <div class="mt-10 flex justify-center">
+          <img
+            src="./assets/hero-vegetables.png"
+            alt="Fresh Groceries"
+            class="w-full max-w-3xl"
+          />
+        </div>
+      </section>
+    </header>
+  </body>
 </html>
