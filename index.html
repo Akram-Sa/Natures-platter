@@ -5,29 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
   </head>
   <body>
     <header class="bg-gradient-to-b from-white to-[#EFEBE3]">
+      <!-- header left portion -->
       <nav class="flex justify-between items-center px-[141px] p-6">
         <div>
           <img src="./assets/logo-header.png" alt="" />
         </div>
-        <div class="space-x-6 hidden md:flex">
-          <a href="#" class="text-gray-700 hover:text-green-600">Product</a>
-          <a href="#" class="text-gray-700 hover:text-green-600">Services</a>
-          <a href="#" class="text-gray-700 hover:text-green-600">Contact us</a>
-        </div>
-        <div class="space-x-4 hidden md:flex">
-          <button
-            class="px-4 py-2 border rounded-lg text-gray-700 hover:bg-gray-200"
-          >
-            Login
-          </button>
-          <button
-            class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-          >
-            Register
-          </button>
+        <div class="flex space-x-20 items-center">
+          <div class="space-x-6 hidden md:flex">
+            <a href="#" class="text-gray-700 hover:text-green-600">Product</a>
+            <a href="#" class="text-gray-700 hover:text-green-600">Services</a>
+            <a href="#" class="text-gray-700 hover:text-green-600"
+              >Contact us</a
+            >
+          </div>
+          <!-- header right portion -->
+          <div class="space-x-4 items-center hidden md:flex">
+            <i
+              class="fas fa-search text-gray-700 text-lg cursor-pointer hover:text-green-600"
+            ></i>
+            <i
+              class="fas fa-shopping-cart text-gray-700 text-lg cursor-pointer hover:text-green-600"
+            ></i>
+            <button
+              class="px-4 py-2 border rounded-lg text-gray-700 hover:bg-gray-200"
+            >
+              Login
+            </button>
+            <button
+              class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
+            >
+              Register
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -50,5 +63,34 @@
         </div>
       </section>
     </header>
+    <main>
+     
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-[#179800] mb-6">Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-[#EFEBE3] p-6 rounded-lg shadow-md text-center">
+                    <img src="./assets/service.png"
+                    alt=""class="mx-auto w-16 mb-4">
+                    <h3 class="text-lg font-semibold">24/7 Services</h3>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-[#EFEBE3]  p-6 rounded-lg shadow-md text-center">
+                    <img src="./assets/delivery.png" alt="Fast Delivery" class="mx-auto w-16 mb-4">
+                    <h3 class="text-lg font-semibold">Fast Delivery</h3>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-[#EFEBE3]  p-6 rounded-lg shadow-md text-center">
+                    <img src="./assets/healthy.png" alt="Healthy Products" class="mx-auto w-16 mb-4">
+                    <h3 class="text-lg font-semibold">Healthy Products</h3>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
